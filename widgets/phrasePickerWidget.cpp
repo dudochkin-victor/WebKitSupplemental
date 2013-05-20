@@ -159,11 +159,11 @@ PhrasePickerWidget::PhrasePickerWidget(QObject* parent, int maxWidth, QString pa
     succeeded = succeeded && rightScrollFade.load(pathToImageDir + QString::fromUtf8(kRightFadeScrollFilename));
 
     if (succeeded) {
-        m_leftScrollFadeItem = new QGraphicsPixmapItem(leftScrollFade, this, scene());
+        m_leftScrollFadeItem = new QGraphicsPixmapItem(leftScrollFade, this/*, scene()*/); //DV
         m_leftScrollFadeItem->setZValue(1);
         m_leftScrollFadeItem->setEnabled(false);
         m_leftScrollFadeItem->setVisible(false);
-        m_rightScrollFadeItem = new QGraphicsPixmapItem(rightScrollFade, this, scene());
+        m_rightScrollFadeItem = new QGraphicsPixmapItem(rightScrollFade, this/*, scene()*/); //DV
         m_rightScrollFadeItem->setZValue(1);
         m_rightScrollFadeItem->setEnabled(false);
         m_rightScrollFadeItem->setVisible(false);
