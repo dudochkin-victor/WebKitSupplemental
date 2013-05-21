@@ -34,6 +34,7 @@ SET(LIBRARY_SRCS
 
 SET(LIBRARY_HEADERS
         weboswebpage.h
+        webosmisc.h
     )
 
 QT5_WRAP_CPP(LIBRARY_MOC_HEADERS ${LIBRARY_HEADERS})
